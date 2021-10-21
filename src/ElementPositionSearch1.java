@@ -1,8 +1,8 @@
-public class ElementPositionSearch {
+public class ElementPositionSearch1 {
 
     public static void main(String[] args) {
   int[]ascendingSortedArray = {2,4,6,12,17,25,67};
-  int target = 17;
+  int target = 67;
         System.out.println(binarySearchForPosition(ascendingSortedArray,target));
     }
     public static int binarySearchForPosition(int[]arr, int target){
