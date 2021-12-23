@@ -10,10 +10,10 @@ public class SearchingIn2DArray {
             {28,29,37,49},
             {33,34,38,50}
     };
-        System.out.println(Arrays.toString(search(arr, 49)));
+        System.out.println(Arrays.toString(searchingASortedArray(arr, 37)));
 
     }
-    public static int[] search(int[][] matrix, int target){
+    public static int[] searchingASortedArray(int[][] matrix, int target){
         int row = 0;
         int column = matrix.length - 1;
 
