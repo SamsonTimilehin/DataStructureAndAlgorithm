@@ -1,6 +1,6 @@
 package recursion;
 
-public class Count {
+public class CountWithRecursion {
 
     public static void main(String[] args) {
 
