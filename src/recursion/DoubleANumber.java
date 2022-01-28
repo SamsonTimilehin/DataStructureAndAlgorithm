@@ -4,17 +4,15 @@ public class DoubleANumber {
 
     public static void main(String[] args) {
 
-        System.out.println(doubleANumber(3));
+        System.out.println(doubleANumber(5));
     }
     public static int doubleANumber(int number){
 
-       return helperMethod(number, 2);
+        if(number == 0){
+            return number;
+        }
+       return 2 + doubleANumber(number - 1);
     }
 
-    private static int helperMethod(int number, int val) {
-        if(val > 2){
-            return val;
-        }
-       return helperMethod(number, val * number);
-    }
+
 }

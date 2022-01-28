@@ -4,7 +4,7 @@ public class CountWithRecursion {
 
     public static void main(String[] args) {
 
-        System.out.println(countZeros(200100));
+        System.out.println(countZeros(200));
     }
 
     public static int countZeros(int number){

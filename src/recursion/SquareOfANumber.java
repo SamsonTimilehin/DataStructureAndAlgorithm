@@ -3,19 +3,24 @@ package recursion;
 public class SquareOfANumber {
 
     public static void main(String[] args) {
-        System.out.println(findSquare(-9));
+        System.out.println(findSquare(3));
     }
 
     public static int findSquare(int number){
 
-        return helperMethod(number, 1);
-    }
+        int numVal = 0;
 
-    private static int helperMethod(int number, int result) {
-        if(result > 1){
-            return result;
+
+
+        for (int counter = 0; counter < number; counter++) {
+            numVal = number + counter;
         }
 
-        return helperMethod(number, result * (number * number));
+        if(number == 0){
+            return number;
+        }
+        return numVal + findSquare(number - 1);
     }
+
+
 }
